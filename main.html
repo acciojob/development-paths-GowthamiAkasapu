@@ -4,18 +4,23 @@
   <title>Development Paths</title>
   <style>
     img {
-      height: 300px; /* Set height using CSS so Cypress detects it */
+      height: 300px !important;   /* Force CSS height Cypress can detect */
+      width: auto;
+      display: block;             /* Ensures height applies correctly */
     }
   </style>
 </head>
 <body>
   <h1>Welcome to Accio Jobs!</h1>
 
-  <!-- Image with CSS-applied height -->
-  <img src="https://www.acciojob.com/_next/image?url=%2Fassets%2Fimages%2Faccio-logo.png&w=384&q=75" alt="Accio Jobs Logo">
+  <!-- Image -->
+  <img src="https://www.acciojob.com/_next/image?url=%2Fassets%2Fimages%2Faccio-logo.png&w=384&q=75" 
+       alt="Accio Jobs Logo">
 
+  <!-- Paragraph -->
   <p>5 software program developer profession paths</p>
 
+  <!-- Unordered List -->
   <ul>
     <li>Cloud development</li>
     <li>Desktop development</li>
@@ -25,3 +30,4 @@
   </ul>
 </body>
 </html>
+
